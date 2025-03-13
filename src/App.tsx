@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { School } from 'lucide-react';
+import { School, Menu, X } from 'lucide-react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Academics from './pages/Academics';
@@ -8,8 +8,19 @@ import Admissions from './pages/Admissions';
 import Gallery from './pages/Gallery';
 import News from './pages/News';
 import Contact from './pages/Contact';
+import TawkChat from './components/TawkChat';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Router>
       <div className="min-h-screen bg-[#F5F5F5]">
@@ -17,10 +28,21 @@ function App() {
         <nav className="bg-[#003366] text-white py-4 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-between items-center">
-              <Link to="/" className="flex items-center gap-2">
+              <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
                 <School size={24} />
                 <span className="font-semibold text-lg">Hujatul Islam School</span>
               </Link>
+              
+              {/* Mobile menu button */}
+              <button 
+                className="md:hidden p-2 hover:bg-[#004488] rounded-lg transition-colors"
+                onClick={toggleMenu}
+                aria-label="Toggle menu"
+              >
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+
+              {/* Desktop Navigation */}
               <div className="hidden md:flex gap-6">
                 <Link to="/" className="hover:text-[#FFD700] transition">Home</Link>
                 <Link to="/about" className="hover:text-[#FFD700] transition">About Us</Link>
@@ -29,6 +51,19 @@ function App() {
                 <Link to="/gallery" className="hover:text-[#FFD700] transition">Gallery</Link>
                 <Link to="/news" className="hover:text-[#FFD700] transition">News & Events</Link>
                 <Link to="/contact" className="hover:text-[#FFD700] transition">Contact</Link>
+              </div>
+            </div>
+
+            {/* Mobile Navigation */}
+            <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} pt-4`}>
+              <div className="flex flex-col gap-4">
+                <Link to="/" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>Home</Link>
+                <Link to="/about" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>About Us</Link>
+                <Link to="/academics" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>Academics</Link>
+                <Link to="/admissions" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>Admissions</Link>
+                <Link to="/gallery" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>Gallery</Link>
+                <Link to="/news" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>News & Events</Link>
+                <Link to="/contact" className="hover:text-[#FFD700] transition py-2" onClick={closeMenu}>Contact</Link>
               </div>
             </div>
           </div>
@@ -86,6 +121,9 @@ function App() {
             </div>
           </div>
         </footer>
+
+        {/* Tawk.to Chat Widget */}
+        <TawkChat />
       </div>
     </Router>
   );
