@@ -1,16 +1,15 @@
 import React from 'react';
 import { FileText, CheckCircle, HelpCircle, DollarSign } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 function Admissions() {
   return (
-    <div className="py-16">
-      {/* Hero Section */}
-      <div className="bg-[#003366] text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Admissions</h1>
-          <p className="text-xl max-w-2xl">Join our community of learners and begin your journey towards excellence.</p>
-        </div>
-      </div>
+    <div>
+      <HeroSection
+        title="Admissions"
+        subtitle="Join our community of learners and begin your journey towards excellence."
+        backgroundImage="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80"
+      />
 
       {/* Admission Process */}
       <div className="max-w-7xl mx-auto px-4 py-16">

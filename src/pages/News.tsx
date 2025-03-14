@@ -1,16 +1,15 @@
 import React from 'react';
 import { Calendar, Award, Users, BookOpen } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 function News() {
   return (
-    <div className="py-16">
-      {/* Hero Section */}
-      <div className="bg-[#003366] text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">News & Events</h1>
-          <p className="text-xl max-w-2xl">Stay updated with the latest happenings at our school.</p>
-        </div>
-      </div>
+    <div>
+      <HeroSection
+        title="News & Events"
+        subtitle="Stay updated with the latest happenings at our school."
+        backgroundImage="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+      />
 
       {/* Latest News */}
       <div className="max-w-7xl mx-auto px-4 py-16">

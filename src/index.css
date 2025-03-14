@@ -34,15 +34,15 @@
 }
 
 .animate-fade-in {
-  animation: fade-in 1s ease-out;
+  animation: fade-in 0.3s ease-out;
 }
 
 .animate-slide-up {
-  animation: slide-up 1s ease-out;
+  animation: slide-up 0.3s ease-out;
 }
 
 .animate-slide-in {
-  animation: slide-in 1s ease-out;
+  animation: slide-in 0.3s ease-out;
 }
 
 /* Add smooth scrolling to the entire page */
@@ -50,9 +50,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Optimize performance */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 /* Add hover animations to all interactive elements */
 .hover-scale {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .hover-scale:hover {
@@ -61,5 +68,37 @@ html {
 
 /* Add transition to all elements */
 * {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+}
+
+/* Hero section styles */
+.hero-section {
+  @apply relative overflow-hidden bg-[#003366] text-white py-20 px-4 text-center;
+  background-blend-mode: overlay;
+  will-change: transform;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 51, 102, 0.7);
+  z-index: 1;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optimize background image loading */
+.bg-image {
+  background-color: #003366;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  will-change: transform;
 }

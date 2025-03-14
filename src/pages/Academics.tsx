@@ -1,16 +1,15 @@
 import React from 'react';
 import { BookOpen, Users, Trophy, Calendar } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 function Academics() {
   return (
-    <div className="py-16">
-      {/* Hero Section */}
-      <div className="bg-[#003366] text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Academic Excellence</h1>
-          <p className="text-xl max-w-2xl">Our comprehensive curriculum ensures holistic development of every student.</p>
-        </div>
-      </div>
+    <div>
+      <HeroSection
+        title="Academic Excellence"
+        subtitle="Our comprehensive curriculum ensures holistic development of every student."
+        backgroundImage="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80"
+      />
 
       {/* Curriculum Overview */}
       <div className="max-w-7xl mx-auto px-4 py-16">

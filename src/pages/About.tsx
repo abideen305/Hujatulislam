@@ -1,16 +1,15 @@
 import React from 'react';
 import { Users, BookOpen, Heart, Shield } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 function About() {
   return (
-    <div className="py-16">
-      {/* Hero Section */}
-      <div className="bg-[#003366] text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">About Our School</h1>
-          <p className="text-xl max-w-2xl">Established in 1995, Hujatul Islam Nursery and Primary School has been a cornerstone of quality education in Sango-Agege.</p>
-        </div>
-      </div>
+    <div>
+      <HeroSection
+        title="About Our School"
+        subtitle="Established in 1995, Hujatul Islam Nursery and Primary School has been a cornerstone of quality education in Sango-Agege."
+        backgroundImage="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+      />
 
       {/* Mission & Vision */}
       <div className="max-w-7xl mx-auto px-4 py-16">
