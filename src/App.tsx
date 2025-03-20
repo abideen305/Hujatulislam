@@ -43,7 +43,7 @@ function App() {
       <ScrollToTop />
       <div className="min-h-screen bg-[#F5F5F5]">
         {/* Navigation */}
-        <nav className="bg-black text-white py-4 sticky top-0 z-50">
+        <nav className="bg-[#003366] text-white py-4 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-between items-center">
               <Link to="/" className="flex items-center gap-2" onClick={handleLinkClick}>
@@ -53,7 +53,7 @@ function App() {
               
               {/* Mobile menu button */}
               <button 
-                className="md:hidden p-2 hover:bg-gray-900 rounded-lg transition-colors"
+                className="md:hidden p-2 hover:bg-[#004488] rounded-lg transition-colors"
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
               >
@@ -101,7 +101,7 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-black text-white py-8">
+        <footer className="bg-[#002244] text-white py-8">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
