@@ -8,17 +8,17 @@ function Home() {
 
   const heroSlides = [
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/MkZnH04F/h7.jpg",
       title: "Nurturing Young Minds for a Brighter Future",
       subtitle: "Where Excellence Meets Islamic Values"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/xKNzkvNn/h6.jpg",
       title: "Building Strong Character",
       subtitle: "Academic Excellence with Islamic Foundation"
     },
     {
-      url: "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/LhrYsqs9/h3.jpg",
       title: "Creating Tomorrow's Leaders",
       subtitle: "Quality Education in a Nurturing Environment"
     }
@@ -26,27 +26,27 @@ function Home() {
 
   const galleryImages = [
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/MkZnH04F/h7.jpg",
       title: "Classroom Activities"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/xKNzkvNn/h6.jpg",
       title: "Sports Activities"
     },
     {
-      url: "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/LhrYsqs9/h3.jpg",
       title: "Cultural Events"
     },
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/Q7g6Dwqs/h4.jpg",
       title: "Science Fair"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/MkZnH04F/h7.jpg",
       title: "Art Exhibition"
     },
     {
-      url: "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/xKNzkvNn/h6.jpg",
       title: "Quranic Competition"
     }
   ];
@@ -131,7 +131,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Gallery Section with Auto-sliding */}
+      {/* Gallery Section */}
       <div className="bg-[#F5F5F5] py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#003366] mb-12 text-center">Our Gallery</h2>
@@ -139,16 +139,13 @@ function Home() {
             {galleryImages.map((image, index) => (
               <div 
                 key={index} 
-                className="relative group overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+                className="relative group overflow-hidden rounded-lg shadow-lg"
               >
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover transform hover:scale-105 transition duration-300"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-white text-xl font-semibold">{image.title}</h3>
-                </div>
               </div>
             ))}
           </div>

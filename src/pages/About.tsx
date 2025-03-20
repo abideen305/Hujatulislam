@@ -8,7 +8,7 @@ function About() {
       <HeroSection
         title="About Our School"
         subtitle="Established in 1995, Hujatul Islam Nursery and Primary School has been a cornerstone of quality education in Sango-Agege."
-        backgroundImage="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+        backgroundImage="https://i.ibb.co/MkZnH04F/h7.jpg"
       />
 
       {/* Mission & Vision */}
@@ -68,21 +68,21 @@ function About() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" 
+              src="https://i.ibb.co/PZYLjY1M/h2.jpg" 
               alt="Principal" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mrs. Aisha Adeyemi</h3>
+            <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mr. Alliu Usman</h3>
             <p className="text-[#333333] text-center mb-4">Principal</p>
-            <p className="text-[#333333] text-center">With over 20 years of experience in education, Mrs. Adeyemi is dedicated to fostering a love for learning in every child.</p>
+            <p className="text-[#333333] text-center">With over 20 years of experience in education, Mr. Usman is dedicated to fostering a love for learning in every child.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&q=80&w=400&h=400" 
+              src="https://i.ibb.co/nN33b4g7/h1.jpg" 
               alt="Vice Principal" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mr. Ibrahim Hassan</h3>
+            <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mrs. Olaogun Haleemah</h3>
             <p className="text-[#333333] text-center mb-4">Vice Principal</p>
             <p className="text-[#333333] text-center">A dedicated educator with 15 years of experience in Islamic education and academic excellence.</p>
           </div>

@@ -4,27 +4,27 @@ import HeroSection from '../components/HeroSection';
 function Gallery() {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/MkZnH04F/h7.jpg",
       title: "Classroom Activities"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/xKNzkvNn/h6.jpg",
       title: "Sports Day"
     },
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/LhrYsqs9/h3.jpg",
       title: "Art Exhibition"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/Q7g6Dwqs/h4.jpg",
       title: "Graduation Ceremony"
     },
     {
-      url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/MkZnH04F/h7.jpg",
       title: "Cultural Day"
     },
     {
-      url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80",
+      url: "https://i.ibb.co/xKNzkvNn/h6.jpg",
       title: "Science Fair"
     }
   ];
@@ -34,7 +34,7 @@ function Gallery() {
       <HeroSection
         title="School Gallery"
         subtitle="Capturing moments and memories from our school life."
-        backgroundImage="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80"
+        backgroundImage="https://i.ibb.co/LhrYsqs9/h3.jpg"
       />
 
       {/* Gallery Grid */}
@@ -47,9 +47,6 @@ function Gallery() {
                 alt={image.title}
                 className="w-full h-64 object-cover hover:scale-105 transition duration-300"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-[#003366]">{image.title}</h3>
-              </div>
             </div>
           ))}
         </div>
