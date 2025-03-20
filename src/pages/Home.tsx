@@ -69,7 +69,7 @@ function Home() {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
             style={{
-              backgroundImage: `linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url(${slide.url})`,
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${slide.url})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
@@ -80,13 +80,13 @@ function Home() {
               <div className="flex gap-4 flex-wrap justify-center animate-fade-in">
                 <button 
                   onClick={() => navigate('/admissions')}
-                  className="bg-[#FFD700] text-[#003366] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
+                  className="bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
                 >
                   Apply Now
                 </button>
                 <button 
                   onClick={() => navigate('/about')}
-                  className="bg-[#4CAF50] text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
+                  className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105"
                 >
                   Learn More
                 </button>
@@ -96,37 +96,29 @@ function Home() {
         ))}
       </div>
 
-      {/* Welcome Section */}
+      {/* Features Grid */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl font-bold text-[#003366] mb-6">Welcome to Our School</h2>
-          <p className="text-[#333333] max-w-3xl mx-auto">
-            At Hujatul Islam Nursery and Primary School, we are dedicated to providing a comprehensive educational experience that nurtures both academic excellence and strong Islamic values. Our commitment to holistic development ensures that every child reaches their full potential in a safe and inspiring environment.
-          </p>
-        </div>
-
-        {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-            <div className="w-12 h-12 bg-[#003366] rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4">
               <BookOpen className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-semibold text-[#003366] mb-2">Quality Education</h3>
-            <p className="text-[#333333]">Comprehensive curriculum integrating academic excellence with Islamic values</p>
+            <h3 className="text-xl font-semibold text-black mb-2">Quality Education</h3>
+            <p className="text-gray-700">Comprehensive curriculum integrating academic excellence with Islamic values</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-            <div className="w-12 h-12 bg-[#FFD700] rounded-full flex items-center justify-center mb-4">
-              <Award className="text-[#003366]" size={24} />
+            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4">
+              <Award className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-semibold text-[#003366] mb-2">Expert Teachers</h3>
-            <p className="text-[#333333]">Dedicated staff committed to nurturing young minds</p>
+            <h3 className="text-xl font-semibold text-black mb-2">Expert Teachers</h3>
+            <p className="text-gray-700">Dedicated staff committed to nurturing young minds</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-            <div className="w-12 h-12 bg-[#4CAF50] rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4">
               <Calendar className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-semibold text-[#003366] mb-2">Modern Facilities</h3>
-            <p className="text-[#333333]">State-of-the-art infrastructure for optimal learning</p>
+            <h3 className="text-xl font-semibold text-black mb-2">Modern Facilities</h3>
+            <p className="text-gray-700">State-of-the-art infrastructure for optimal learning</p>
           </div>
         </div>
       </div>
@@ -134,7 +126,7 @@ function Home() {
       {/* Gallery Section with Auto-sliding */}
       <div className="bg-[#F5F5F5] py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#003366] mb-12 text-center">Our Gallery</h2>
+          <h2 className="text-3xl font-bold text-black mb-12 text-center">Our Gallery</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {galleryImages.map((image, index) => (
               <div 
@@ -155,7 +147,7 @@ function Home() {
           <div className="text-center mt-8">
             <Link
               to="/gallery"
-              className="inline-flex items-center text-[#003366] font-semibold hover:text-[#4CAF50] transition"
+              className="inline-flex items-center text-black font-semibold hover:text-gray-700 transition"
             >
               View More Photos <ChevronRight size={20} />
             </Link>
@@ -165,19 +157,19 @@ function Home() {
 
       {/* News & Updates */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-[#003366] mb-12 text-center">Latest News & Updates</h2>
+        <h2 className="text-3xl font-bold text-black mb-12 text-center">Latest News & Updates</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-            <h3 className="text-xl font-semibold text-[#003366] mb-4">2024/2025 Admissions Now Open</h3>
-            <p className="text-[#333333] mb-4">Join our community of learners for the upcoming academic session.</p>
-            <Link to="/admissions" className="text-[#4CAF50] font-semibold flex items-center hover:translate-x-2 transition-transform">
+            <h3 className="text-xl font-semibold text-black mb-4">2024/2025 Admissions Now Open</h3>
+            <p className="text-gray-700 mb-4">Join our community of learners for the upcoming academic session.</p>
+            <Link to="/admissions" className="text-black font-semibold flex items-center hover:translate-x-2 transition-transform">
               Learn More <ChevronRight size={20} />
             </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-            <h3 className="text-xl font-semibold text-[#003366] mb-4">Academic Excellence Awards</h3>
-            <p className="text-[#333333] mb-4">Our students achieved outstanding results in national competitions.</p>
-            <Link to="/news" className="text-[#4CAF50] font-semibold flex items-center hover:translate-x-2 transition-transform">
+            <h3 className="text-xl font-semibold text-black mb-4">Academic Excellence Awards</h3>
+            <p className="text-gray-700 mb-4">Our students achieved outstanding results in national competitions.</p>
+            <Link to="/news" className="text-black font-semibold flex items-center hover:translate-x-2 transition-transform">
               Read More <ChevronRight size={20} />
             </Link>
           </div>

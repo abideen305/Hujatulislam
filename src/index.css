@@ -73,7 +73,7 @@ body {
 
 /* Hero section styles */
 .hero-section {
-  @apply relative overflow-hidden bg-[#003366] text-white py-20 px-4 text-center;
+  @apply relative overflow-hidden bg-black text-white py-20 px-4 text-center;
   background-blend-mode: overlay;
   will-change: transform;
 }
@@ -82,7 +82,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 51, 102, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -93,7 +93,7 @@ body {
 
 /* Optimize background image loading */
 .bg-image {
-  background-color: #003366;
+  background-color: black;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
