@@ -67,41 +67,41 @@ function About() {
         <h2 className="text-3xl font-bold text-[#003366] mb-12 text-center">Our Leadership</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img 
+            {/* <img 
               src="https://i.ibb.co/Cs3xW13X/mmm1.jpg" 
               alt="Managing Director" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
+            /> */}
             <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Bashir Mulikat Iyabode</h3>
             <p className="text-[#333333] text-center mb-4">Managing Director/Proprietress</p>
             <p className="text-[#333333] text-center">A visionary leader committed to excellence in Islamic education and academic achievement.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img 
+            {/* <img 
               src="https://i.ibb.co/XZLkTpt6/mmm2.jpg" 
               alt="Chairman" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
+            /> */}
             <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Busari Muhammadbashir</h3>
             <p className="text-[#333333] text-center mb-4">Chairman</p>
             <p className="text-[#333333] text-center">Leading our institution with wisdom and dedication to Islamic values and educational excellence.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img 
+            {/* <img 
               src="https://i.ibb.co/PZYLjY1M/h2.jpg" 
               alt="Principal" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
+            /> */}
             <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mr. Mustafa Mudathir</h3>
             <p className="text-[#333333] text-center mb-4">Principal</p>
             <p className="text-[#333333] text-center">With over 20 years of experience in education, Mr. Mudathir is dedicated to fostering a love for learning in every child.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img 
+            {/* <img 
               src="https://i.ibb.co/PG9B37f3/mmm.jpg" 
               alt="Vice Principal" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
+            /> */}
             <h3 className="text-xl font-semibold text-[#003366] text-center mb-2">Mr. Muhammad Babajide</h3>
             <p className="text-[#333333] text-center mb-4">Vice Principal</p>
             <p className="text-[#333333] text-center">A dedicated educator with 15 years of experience in Islamic education and academic excellence.</p>
